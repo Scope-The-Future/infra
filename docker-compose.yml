@@ -12,3 +12,13 @@ services:
     build: ../cloud-platform/services/restaurant-menu-service
     ports:
       - "8002:8000"
+  
+  booking-service:
+    build: ../cloud-platform/services/booking-service
+    ports:
+      - "8003:8000"
+    # Раскомментируйте, если сервису нужны адреса других сервисов или БД:
+    # environment:
+    #   ДРУГОЙ_СЕРВИС_URL: http://<имя-другого-сервиса>:8000
+    # depends_on:
+    #   - <имя-другого-сервиса>
