@@ -1,0 +1,14 @@
+services:
+  order-service:
+    build: ../cloud-platform/services/order-service
+    environment:
+       RESTAURANT_MENU_SERVICE_URL: http://restaurant-menu-service:8000
+    ports:
+      - "8001:8000"
+    depends_on:
+      - restaurant-menu-service
+
+  restaurant-menu-service:
+    build: ../cloud-platform/services/restaurant-menu-service
+    ports:
+      - "8002:8000"
