@@ -26,3 +26,8 @@ services:
     build: ../cloud-platform/services/identity-service
     ports:
       - "8004:8000"
+  reference-books-nomenclature-service:
+    build: ../cloud-platform/services/reference-books-nomenclature-service
+    ports:
+      - "8005:8000"
+
