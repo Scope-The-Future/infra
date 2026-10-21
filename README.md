@@ -4,4 +4,4 @@ Docker Compose и инфраструктура проекта, k8s, автоде
 |---|---|
 | order-service | 8001 |
 | restaurant-menu-service | 8002 |
-| booking-service| 8003 |
+| booking-service| 8003 || identity-service | 8004 |

@@ -22,3 +22,7 @@ services:
     #   ДРУГОЙ_СЕРВИС_URL: http://<имя-другого-сервиса>:8000
     # depends_on:
     #   - <имя-другого-сервиса>
+  identity-service:
+    build: ../cloud-platform/services/identity-service
+    ports:
+      - "8004:8000"
